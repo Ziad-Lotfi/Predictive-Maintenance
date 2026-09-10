@@ -52,6 +52,62 @@ Different Machine Learning algorithms were evaluated during the project, includi
 
 The best-performing model was selected for the corresponding prediction task.
 
+---
+
+## 📊 Model Performance
+
+The best-performing models for each prediction task achieved the following results:
+
+### 1. Remaining Useful Life (RUL)
+
+**Final Model: Random Forest**
+
+| Metric |      Score |
+| ------ | ---------: |
+| MAE    | 3.11 hours |
+| RMSE   | 7.22 hours |
+| R²     |      0.925 |
+
+### 2. Failure Within 24 Hours
+
+**Final Model: XGBoost**
+
+| Metric              | Score |
+| ------------------- | ----: |
+| Accuracy            |   98% |
+| Precision (Failure) |   94% |
+| Recall (Failure)    |   95% |
+| F1-Score (Failure)  |   94% |
+
+### 3. Failure Type Classification
+
+**Final Model: XGBoost**
+
+| Metric            | Score |
+| ----------------- | ----: |
+| Accuracy          |   99% |
+| Macro F1-Score    |   96% |
+| Weighted F1-Score |   99% |
+
+### 4. Estimated Repair Cost
+
+**Final Model: Random Forest**
+
+| Metric |  Score |
+| ------ | -----: |
+| MAE    | 273.83 |
+| RMSE   | 734.11 |
+| R²     |  0.785 |
+
+### 🏆 Final Models Summary
+
+| Prediction Task             | Final Model   | Main Performance |
+| --------------------------- | ------------- | ---------------: |
+| Remaining Useful Life (RUL) | Random Forest |       R² = 0.925 |
+| Failure Within 24 Hours     | XGBoost       |   Accuracy = 98% |
+| Failure Type                | XGBoost       |   Accuracy = 99% |
+| Estimated Repair Cost       | Random Forest |       R² = 0.785 |
+
 ## 📊 Dataset
 
 The project uses the following dataset:
@@ -64,6 +120,7 @@ The dataset contains industrial machine information and sensor/operational featu
 
 ```text
 Predictive-Maintenance/
+
 │
 ├── models/
 │   ├── rul_pipeline.pkl
@@ -77,9 +134,14 @@ Predictive-Maintenance/
 │   ├── failure_type.ipynb
 │   └── estimated_repair_cost.ipynb
 │
+├── screenshots/
+│   ├── app_1.png
+│   └── app_2.png
+│
 ├── app.py
 ├── predictive_maintenance_v3.csv
 ├── Industrial_Predictive_Maintenance_Presentation.pptx
+├── .gitattributes
 └── README.md
 ```
 
@@ -102,7 +164,6 @@ streamlit run app.py
 #### Prediction Result & Additional Details
 
 ![Prediction Result](screenshots/app_2.png)
-
 
 ## 🛠️ Technologies Used
 
@@ -157,6 +218,7 @@ The project presentation is included in the repository:
 * **Mohamed Gamil**
 
 **Project:** Industrial Predictive Maintenance
+
 **University:** Faculty of Computers and Artificial Intelligence – Benha University
 
 ---
