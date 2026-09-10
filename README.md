@@ -139,6 +139,7 @@ Predictive-Maintenance/
 │   └── app_2.png
 │
 ├── app.py
+├── requirements.txt
 ├── predictive_maintenance_v3.csv
 ├── Industrial_Predictive_Maintenance_Presentation.pptx
 ├── .gitattributes
@@ -149,11 +150,35 @@ Predictive-Maintenance/
 
 The project includes a Streamlit application that provides an interactive interface for using the trained Machine Learning models.
 
-To run the application:
+### ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Ziad-Lotfi/Predictive-Maintenance.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd Predictive-Maintenance
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### ▶️ Run the Application
+
+Start the Streamlit application:
 
 ```bash
 streamlit run app.py
 ```
+
+The application will open in your browser.
 
 ### 📸 Application Screenshots
 
