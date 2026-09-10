@@ -93,6 +93,17 @@ To run the application:
 streamlit run app.py
 ```
 
+### 📸 Application Screenshots
+
+#### Application Interface
+
+![Application Interface](screenshots/app_1.png)
+
+#### Prediction Result & Additional Details
+
+![Prediction Result](screenshots/app_2.png)
+
+
 ## 🛠️ Technologies Used
 
 * Python
